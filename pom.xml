@@ -22,8 +22,25 @@
         </dependency>
     </dependencies>
 
+    <!-- 指定下载插件的仓库 -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven2</id>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <!-- 添加指定的插件来实现不同的功能 -->
     <build>
         <plugins>
+            <!-- Maven Wrapper 包装器插件 -->
+            <plugin>
+                <groupId>io.takari.maven.plugins</groupId>
+                <artifactId>provisio-maven-plugin</artifactId>
+                <version>0.1.56</version>
+                <extensions>true</extensions>
+            </plugin>
+
             <!-- Build an executable Jar 指定项目的启动Class
                  Make a jar executable, to jar a file called META-INF/MANIFEST.MF -->
             <plugin>
@@ -51,8 +68,7 @@
         </plugins>
     </build>
 
-    <!--
-      <profiles>
+    <!-- <profiles>
         <profile>
             <id>junit5-engine</id>
             <dependencies>
@@ -75,6 +91,5 @@
                 </dependency>
             </dependencies>
         </profile>
-    </profiles>
-    -->
+    </profiles> -->
 </project>
