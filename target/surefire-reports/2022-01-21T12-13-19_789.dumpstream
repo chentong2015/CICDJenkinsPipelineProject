@@ -1,4 +1,0 @@
-# Created at 2022-01-21T12:13:20.005
-Boot Manifest-JAR contains absolute paths in classpath 'D:\OneDrive - Murex\Work Murex\Sprint 01\CI CD\JavaJenkinsFreestyleProject\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
