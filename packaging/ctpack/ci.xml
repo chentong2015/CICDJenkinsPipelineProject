@@ -1,0 +1,19 @@
+<!-- 使用CI配置，指定打包时依赖的脚本 -->
+<ciConfig>
+    <ctpack>
+        <package>
+            <id>my-packager</id>
+            <name>my project package</name>
+            <description>my package</description>
+            <packagerRef>
+                <classPath>package</classPath>
+                <className>Packager</className>
+            </packagerRef>
+            <wizardRef>
+                <classPath>package</classPath>
+                <className>Installer</className>
+            </wizardRef>
+            <filename>SetupProject</filename>
+        </package>
+    </ctpack>
+</ciConfig>
