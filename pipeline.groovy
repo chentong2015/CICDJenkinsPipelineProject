@@ -16,6 +16,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
+			    // 从git上指定的路径获取项目的源代码，运行指定的自动化测试，或者配置 
                 git url: 'https://github.com/chentong2015/JavaJenkinsFreestyleProject.git', branch: 'main'
             }
         }
