@@ -1,6 +1,8 @@
 #!/usr/bin/env groovy
 // shebang tells most editors to treat as groovy (syntax highlights, formatting, etc)
 
+library 'pipeline-utils'
+
 pipeline {
 
     agent any
@@ -17,6 +19,12 @@ pipeline {
             steps {
                 // sh './mvnw clean package'
                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+        }
+
+        stage("publish") {
+            steps {
+                invokeMaven()
             }
         }
     }
