@@ -9,3 +9,9 @@ X
 (packaging/ctpack/package/Packager.groovy,d\e\de43fb13b1c1d296c3bf2a85ff5b2308ef30c275
 A
 packaging/pom.xml,c\9\c948eb7717936cb9976a8327208bf8182270a680
+9
+	.mvn/mvnw,d\4\d434053aa2b864830cfeaac125aca48e4f42ce86
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+Y
+)packaging/ctpack/package/Installer.groovy,c\6\c6b1a000c5656d276cc2616be64a280e4c72f09c
