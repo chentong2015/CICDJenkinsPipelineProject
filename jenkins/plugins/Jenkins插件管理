@@ -1,15 +1,10 @@
 Jenkins使用丰富的插件来提供额外的强大的功能
 https://www.jenkins.io/doc/book/managing/plugins/
 
----------------------------------------------------------------------
-1. Dark plugin 安装Theme主题的插件
+Dark plugin 安装Theme主题的插件
 
-2. TimeStamper plugin 显示build时间戳的插件
-   "Enable for all pipeline builds" 全局设置，每行都会出现时间戳
-   https://plugins.jenkins.io/timestamper/
-
-3. Nexus Artifact Uploader 上传到Nexus Server的插件
-   https://github.com/jenkinsci/nexus-artifact-uploader-plugin
-   nexusUploadSetups('target/mvr-setups.jar', 'repo-dev-credentials')
+TimeStamper plugin 显示build时间戳的插件
+"Enable for all pipeline builds" 全局设置，每行都会出现时间戳
+https://plugins.jenkins.io/timestamper/
 
 通常情况，在遇到安装插件出错的情况下(版本冲突)，可以通过重启Jenkins来Update到指定的版本

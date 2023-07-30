@@ -1,0 +1,28 @@
+Nexus Artifact Uploader 上传到Nexus Server的插件
+https://github.com/jenkinsci/nexus-artifact-uploader-plugin
+https://www.jenkins.io/doc/pipeline/steps/nexus-artifact-uploader/
+
+// 调用插件提供的方法来实现上传
+// 配置将什么artifact上传到指定的远程Nexus仓库
+nexusArtifactUploader {
+    nexusVersion('nexus3')
+    protocol('http')
+    nexusUrl('localhost:8081')
+    groupId('')    // ${POM_GROUPID}
+    version('')    // ${POM_VERSION}
+    repository('maven-nexus-repo')
+    credentialsId('44620c50-1589-****')
+
+    artifact {
+        artifactId('nexus-artifact-uploader')
+        type('jar')
+        classifier('debug')
+        file('nexus-artifact-uploader.jar')
+    }
+    artifact {
+        artifactId('nexus-artifact-uploader')
+        type('hpi')
+        classifier('debug')
+        file('nexus-artifact-uploader.hpi')
+    }
+}

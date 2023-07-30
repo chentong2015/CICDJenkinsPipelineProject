@@ -1,16 +1,15 @@
-启动后打开localhost:8080(端口不能被占用)
-> java -jar Jenkins.war
-  login: test
-  password: test
+> java -jar jenkins.war
+打开localhost:8080(端口不能被占用)
 
-默认的初始Admin密码路径: 删除之后重新启动，则会生产新的密码，否则保留原来的配置
-Windows: C:\Users\tchen\.jenkins\secrets\initialAdminPassword
-Linux: $user.home/.jenkins
+首次启动Jenkins后会在C盘生成.jenkins目录
+通过secrets\initialAdminPassword初始密码进行激活，登录后创建用户再重启
+Windows: C:\Users\tchen\.jenkins
+Linux  : $user.home/.jenkins
 
-所创建的项目Job全部位于本地的路径下，保护每一次build项目的日志信息
+Jenkins项目Job全部位于本地的路径并保留build项目的日志信息
 C:\Users\tchen\.jenkins\jobs
 
-----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------
 Visual Studio Code + Jenkins Runner Plugin
 Jenkins Runner
 {

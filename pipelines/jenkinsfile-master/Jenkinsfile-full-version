@@ -42,6 +42,16 @@ pipeline {
 
     // pipeline build的不同stage阶段(步骤)
     stages {
+
+        // Email Extension Plugin 需要配置插件的SMTP Server(邮件发送协议服务器)
+        stage('Send Initialization Email') {
+            steps {
+                script {
+                    emailext subject: "New Branch", body: "The body message", to: "test@gmail.com"
+                }
+            }
+        }
+
         // 配置一个完整的阶段：需要什么agent, when什么时候构建，构建的environment环境是什么
         //                 steps阶段，post和构建结束之后的阶段(ok, nok, cleanup)相关的操作
         stage('Launch my project building') {
@@ -58,6 +68,7 @@ pipeline {
                 SETUPS_URL = nexusLatestSetupsUrl()
                 TEST_NAME = "startup-parallel-${BUILD_ID}"
             }
+
             steps {
                 script {
                     composeFiles = [COMPOSE_FILE, COMPOSE_FILE_MSSQL]

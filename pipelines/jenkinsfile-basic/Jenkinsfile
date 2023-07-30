@@ -15,6 +15,14 @@ pipeline {
         // 该文件置于项目的主目录下面，等效与于包含了隐示的git url的检查
         // implicit checkout stage
 
+        stage('init') {
+           step {
+              sh "echo hello"
+              sh "java -version"
+
+           }
+        }
+
         stage('Build') {
             steps {
                 // sh './mvnw clean package'
