@@ -1,0 +1,7 @@
+选择项目版本中指定的分支进行构建:
+
+Discover branches
+  Strategy: All branches
+
+Filter by name (with regular expression)
+  master|java.*

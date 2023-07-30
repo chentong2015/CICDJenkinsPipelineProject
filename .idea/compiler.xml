@@ -6,8 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="libray-groovy" />
         <module name="packaging" />
+        <module name="pipelines" />
+        <module name="pipelines-nexus" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lib-groovy" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

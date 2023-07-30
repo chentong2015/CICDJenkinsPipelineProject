@@ -1,0 +1,26 @@
+Auto: Git -> clean -> compile -> test -> package
+
+Source Code Management 选择指定Github资源，Jenkins会获取项目的所有文件
+
+Build 必须确定项目能够build, 然后plugin in jenkins
+
+自动化指令的流程process
+使用Maven Wrapper来构建，确保在Jenkins部署的机器上没有安装Maven工具也能执行
+   > ./mvnw compile 编译项目
+   > ./mvnw test    运行项目的测试
+   > ./mvnw package 打包项目成jar
+   > java -Dserver.port=8081 -jar target/project_demo.jar 运行在指定的端口
+
+workspace空间是临时的
+   Post-build Actions > build artifacts 构建项目生成的指定的jar文件
+   Publish Junit test report > surefire-reports/*.xml
+
+   jenkins.io/doc/book/bluocean/dashboard > weather icons 找到不同的icon图标
+
+Build Triggers 如何触发整个项目的自动build
+   > 定义指定的周期，检查git repo是否有任何的变动 > trigger project to run
+   > push > GitHub hook trigger for GITScm polling
+
+Started by an on SCM change
+
+Test report查看测试的报告和错误信息

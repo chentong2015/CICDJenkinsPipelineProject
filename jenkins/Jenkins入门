@@ -1,0 +1,34 @@
+启动后打开localhost:8080(端口不能被占用)
+> java -jar Jenkins.war
+  login: test
+  password: test
+
+默认的初始Admin密码路径: 删除之后重新启动，则会生产新的密码，否则保留原来的配置
+Windows: C:\Users\tchen\.jenkins\secrets\initialAdminPassword
+Linux: $user.home/.jenkins
+
+所创建的项目Job全部位于本地的路径下，保护每一次build项目的日志信息
+C:\Users\tchen\.jenkins\jobs
+
+----------------------------------------------------------------------------------------------------
+Visual Studio Code + Jenkins Runner Plugin
+Jenkins Runner
+{
+    // 指定运行的Jenkins Item，选择运行方式pipeline script
+    "jenkins-runner.jobs": {
+	   "ide" {
+	        "runWith": "pipeline-7080,
+            "name": "ide",
+            "idDefault": true
+	    }
+	 },
+	 "jenkins-runner.hostConfigs": {
+	     // 配置jenkins instance的信息
+	     "pipeline-7080": {
+	        "url": "http://jenkins:7080",
+		    "user": "admin"
+		    "password": "admin",
+		    "userCrumbIssuer": true
+	    }
+	 }
+}
