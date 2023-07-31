@@ -1,7 +1,9 @@
 https://www.jenkins.io/doc/pipeline/examples/
-
 https://www.jenkins.io/doc/pipeline/steps/groovy/
 https://www.jenkins.io/doc/book/pipeline/syntax/
 
-根据要执行的Step自动生成Pipeline Script脚本: 之需要定义要执行的步骤
+自动生成Pipeline Script脚本
 http://localhost:8080/job/Test_Pipeline/pipeline-syntax/
+
+Jenkins提供的系统变量，使用env.BRANCH_NAME来获取
+http://localhost:8080/env-vars.html/
