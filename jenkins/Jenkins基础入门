@@ -1,5 +1,8 @@
 > java -jar jenkins.war
 打开localhost:8080(端口不能被占用)
+user: admin
+password: admin
+admin@test.com
 
 首次启动Jenkins后会在C盘生成.jenkins目录
 通过secrets\initialAdminPassword初始密码进行激活，登录后创建用户再重启
