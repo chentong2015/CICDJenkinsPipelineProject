@@ -2,18 +2,12 @@ Auto: Git -> clean -> compile -> test -> package
 
 Source Code Management 选择指定Github资源，Jenkins会获取项目的所有文件
   Repositories
-    Repository URL
-    Credentials
-  Branches to build
+    Repository URL:
+    Credentials:
+  Branches to build:
 
 Build必须确定项目能够build, 然后plugin in jenkins
 
 Build Triggers 如何触发整个项目的自动build
-   > 定义指定的周期，检查git repo是否有任何的变动 > trigger project to run
-   > push > GitHub hook trigger for GITScm polling
-
-Post-build Actions
-    > build artifacts 构建项目生成的指定的jar文件
-   Publish Junit test report > surefire-reports/*.xml
-
-   jenkins.io/doc/book/bluocean/dashboard > weather icons 找到不同的icon图标
+   > 定义指定的周期，检查git repo是否有任何的变动
+   > GitHub hook trigger for GITScm polling

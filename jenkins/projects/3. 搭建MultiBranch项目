@@ -1,11 +1,8 @@
 https://www.jenkins.io/doc/book/pipeline/multibranch/
 
 Scan Multibranch Pipeline Triggers
-    Repository Name:
-        v.3.1.test.repo
-
-    Discover branches:
-        All branched
+    Repository Name:  v.3.1.test.repo
+    Discover branches:  All branched
 
     Discover pull requests from origin
         Merging the pull request with the target branch revision
@@ -14,5 +11,5 @@ Scan Multibranch Pipeline Triggers
         Mode: by Jenkinsfile
               Script Path: relative_path/folder/Jenkinsfile
 
-        Scan Multibranch Pipeline Triggers
-              Periodically, Interval: 1 minute
+    Scan Multibranch Pipeline Triggers
+        Periodically, Interval: 1 minute  定时的周期性的触发

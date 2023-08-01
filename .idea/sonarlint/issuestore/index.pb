@@ -9,8 +9,6 @@ G
 pipelines-nexus/pom.xml,2\0\20a95010e56dcb08bd366d75ff68c5be64746b9e
 E
 libray-groovy/pom.xml,b\7\b7920f251833160d1222a1e2f44bf6d0259536ad
-V
-&jenkins/projects/搭建freestyle项目,f\5\f543e236d6093ecd8ac43c19ca969164ce74b6e2
 Z
 *libray-groovy/src/main/groovy/Utils.groovy,e\6\e65d19e153d236c377127aaddeb84d6dfdf79d4a
 X
@@ -18,14 +16,16 @@ X
 Y
 )packaging/ctpack/package/Installer.groovy,c\6\c6b1a000c5656d276cc2616be64a280e4c72f09c
 Y
-)jenkins/projects/搭建Organization项目,8\3\832df7b2afd5a3b5bfd32b3f47ddcfb4c2859143
-Y
 )libray-groovy/src/main/groovy/Main.groovy,b\f\bf2da01da129c600858f10269f89238105501701
-X
-(jenkins/projects/搭建MultiBranch项目,5\a\5a9d3f3e488ff60db5e6518a7fa3375fbd7754ef
 `
 0libray-groovy/src/main/groovy/Groovy语言简介,d\9\d9bc4673b32aeb421ba317c9dceaed26b2ab5429
 ]
 -pipelines-nexus/Nexus-upload-pipelines.groovy,c\3\c30214b8931836032fba4783685a8dea2fb15e50
-U
-%pipelines-nexus/Nexus Uploader Plugin,f\e\feaeb3fd9393f3e7a39feb1a2aae47fdfc7dbb05
+a
+1pipelines/src/main/java/main/MainApplication.java,6\2\628c78d793af2a27cb7429934a299f3581c42e9c
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+[
++pipelines/src/main/java/main/DemoClass.java,9\3\93b84285d81d27080ffd362a3a0ebad04a70640e
+S
+#jenkins/plugins/Jenkins插件管理,0\b\0b579a5959f982b4b2da10dade06164a2e0fc76e

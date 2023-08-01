@@ -7,3 +7,5 @@ http://localhost:8080/job/Test_Pipeline/pipeline-syntax/
 
 Jenkins提供的系统变量，使用env.BRANCH_NAME来获取
 http://localhost:8080/env-vars.html/
+
+jenkins.io/doc/book/bluocean/dashboard 找到不同的icon图标
