@@ -19,13 +19,27 @@ Y
 )libray-groovy/src/main/groovy/Main.groovy,b\f\bf2da01da129c600858f10269f89238105501701
 `
 0libray-groovy/src/main/groovy/Groovy语言简介,d\9\d9bc4673b32aeb421ba317c9dceaed26b2ab5429
-]
--pipelines-nexus/Nexus-upload-pipelines.groovy,c\3\c30214b8931836032fba4783685a8dea2fb15e50
 a
 1pipelines/src/main/java/main/MainApplication.java,6\2\628c78d793af2a27cb7429934a299f3581c42e9c
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 [
 +pipelines/src/main/java/main/DemoClass.java,9\3\93b84285d81d27080ffd362a3a0ebad04a70640e
 S
 #jenkins/plugins/Jenkins插件管理,0\b\0b579a5959f982b4b2da10dade06164a2e0fc76e
+N
+jenkins/Pipeline Groovy Master,d\2\d2b4fa8a1fbeaa01c3dee55adb53b3668ef06d0d
+K
+jenkins/Jenkins基础入门,2\4\24d15922402ca0b1b8def8ba65a23cba56a903bc
+Y
+)jenkins/projects/1. 搭建Freestyle项目,c\e\ce42620ba5a349d5d9eb2c89fe27e9c770975eea
+\
+,jenkins/projects/4. 搭建Organization项目,0\a\0abfdbe51ccc0ed34464ea3b5b237e766eeae896
+X
+(jenkins/projects/2. 搭建Pipeline项目,b\e\be589d292ae23a60d6d8ef7d51df6d27fc811ac3
+Q
+!pipelines/jenkinsfile/Jenkinsfile,0\1\01b7a7457760cb41b77e6dedc11a350502efb581
+[
++jenkins/projects/3. 搭建MultiBranch项目,0\e\0eec28006a8ce88843b16d2573dc9027a85b51a0
+U
+%pipelines/jenkinsfile/pipeline.groovy,3\1\31afb830b8ecfbaf8ec21f0409090f86fe654b7c
+T
+$pipelines/jenkinsfile/scripts.groovy,7\b\7b8753bd8b564a53463a581046ffd3956c06513c

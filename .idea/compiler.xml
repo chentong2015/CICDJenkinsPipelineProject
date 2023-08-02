@@ -9,11 +9,11 @@
         <module name="libray-groovy" />
         <module name="packaging" />
         <module name="pipelines" />
-        <module name="pipelines-nexus" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lib-groovy" target="17" />
+      <module name="pipelines-nexus" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

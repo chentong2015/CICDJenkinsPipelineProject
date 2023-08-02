@@ -6,7 +6,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/pipelines/pom.xml" />
-        <option value="$PROJECT_DIR$/pipelines-nexus/pom.xml" />
         <option value="$PROJECT_DIR$/libray-groovy/pom.xml" />
       </list>
     </option>

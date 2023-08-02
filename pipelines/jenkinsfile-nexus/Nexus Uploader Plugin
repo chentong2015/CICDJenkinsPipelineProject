@@ -2,48 +2,29 @@ Nexus Artifact Uploader 上传到Nexus Server的插件
 https://github.com/jenkinsci/nexus-artifact-uploader-plugin
 https://www.jenkins.io/doc/pipeline/steps/nexus-artifact-uploader/
 
-// 调用插件提供的方法来实现上传
-// 配置将什么artifact上传到指定的远程Nexus仓库
-nexusArtifactUploader {
-    nexusVersion('nexus3')
-    protocol('http')
-    nexusUrl('localhost:8081')
-    groupId('')    // ${POM_GROUPID}
-    version('')    // ${POM_VERSION}
-    repository('maven-nexus-repo')
-    credentialsId('44620c50-1589-****')
+1. 无法上传快照版本，需要上传到releases仓库
+2. 在Jenkins配置连接到Nexus的认证credentialsId
+3. 上传的jar包文件位于相对路径/target目录下
+4. 注意相同的Artifact是否运行重新上传 !!
 
-    artifact {
-        artifactId('nexus-artifact-uploader')
-        type('jar')
-        classifier('debug')
-        file('nexus-artifact-uploader.jar')
-    }
-    artifact {
-        artifactId('nexus-artifact-uploader')
-        type('hpi')
-        classifier('debug')
-        file('nexus-artifact-uploader.hpi')
-    }
+stage('Deploy') {
+   steps {
+       // 调用插件提供的方法来上传
+       nexusArtifactUploader(
+            nexusVersion: 'nexus3',
+            protocol: 'http',
+            nexusUrl: 'localhost:8081',
+            groupId: 'com.example',
+            version: '1.1.0',
+            repository: 'maven-releases',
+            credentialsId: 'nexus-user-login',
+            artifacts: [
+                [
+                  artifactId: 'JenkinsPipelineProjectA',
+                  file: 'target/JenkinsPipelineProjectA-1.1.0.jar',
+                  type: 'jar'
+                ]
+            ]
+       )
+   }
 }
-
-
- stage('Deploy') {
-         steps {
-            nexusArtifactUploader {
-                nexusVersion('nexus3')
-                protocol('http')
-                nexusUrl('localhost:8081')
-                repository('maven-releases')
-                credentialsId('nexus-user-login')
-
-                groupId('org.example')
-                version('1.1.0')
-                artifact {
-                    artifactId('JenkinsPipelineProjectA')
-                    type('jar')
-                    file('JenkinsPipelineProjectA-1.1.0.jar')
-                }
-            }
-         }
-      }
