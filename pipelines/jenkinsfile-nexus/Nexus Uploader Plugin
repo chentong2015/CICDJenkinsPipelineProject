@@ -26,3 +26,24 @@ nexusArtifactUploader {
         file('nexus-artifact-uploader.hpi')
     }
 }
+
+
+ stage('Deploy') {
+         steps {
+            nexusArtifactUploader {
+                nexusVersion('nexus3')
+                protocol('http')
+                nexusUrl('localhost:8081')
+                repository('maven-releases')
+                credentialsId('nexus-user-login')
+
+                groupId('org.example')
+                version('1.1.0')
+                artifact {
+                    artifactId('JenkinsPipelineProjectA')
+                    type('jar')
+                    file('JenkinsPipelineProjectA-1.1.0.jar')
+                }
+            }
+         }
+      }
