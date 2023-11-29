@@ -12,10 +12,8 @@ Linux  : $user.home/.jenkins
 Jenkins项目Job全部位于本地的路径并保留build项目的日志信息
 C:\Users\tchen\.jenkins\jobs
 
---------------------------------------------------------------
 Visual Studio Code + Jenkins Runner Plugin
-Jenkins Runner
-{
+Jenkins Runner {
     // 指定运行的Jenkins Item，选择运行方式pipeline script
     "jenkins-runner.jobs": {
 	   "ide" {

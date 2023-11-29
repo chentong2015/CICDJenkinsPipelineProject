@@ -43,3 +43,17 @@ U
 %pipelines/jenkinsfile/pipeline.groovy,3\1\31afb830b8ecfbaf8ec21f0409090f86fe654b7c
 T
 $pipelines/jenkinsfile/scripts.groovy,7\b\7b8753bd8b564a53463a581046ffd3956c06513c
+e
+5pipelines/jenkinsfile-master/Jenkinsfile-full-version,1\6\16484cc234cbd4aa6f4725b1c8674f7340ee5e17
+d
+4pipelines/jenkinsfile-master/Jenkinsfile-Java.groovy,4\f\4f2b17a4677911d78766f755410441d28528a0da
+Q
+!pipelines/jenkinsfile/hello world,9\8\98ea6df19b6fd7a23011213024f61b1fc851a6f5
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+d
+4pipelines/jenkinsfile-nexus/Nexus-jenkinsfile.groovy,4\8\48ab724090d9cb7eebce9effa32ec1e18c4e5892
+i
+9pipelines/jenkinsfile-nexus/Nexus-upload-pipelines.groovy,8\d\8d29d435a27f586bbfd518c0d085a27151ebee35
+a
+1pipelines/jenkinsfile-nexus/Nexus Uploader Plugin,c\5\c5eaebe8935faf80e0e40194c67dd399cf60517f

@@ -1,10 +1,12 @@
 Jenkins使用丰富的插件来提供额外的强大的功能
+在遇到安装插件出错的情况下(版本冲突)，通过重启Jenkins来Update到指定的版本
 https://www.jenkins.io/doc/book/managing/plugins/
 
 Dark plugin 安装Theme主题的插件
-
 TimeStamper plugin 显示build时间戳的插件
 "Enable for all pipeline builds" 全局设置，每行都会出现时间戳
 https://plugins.jenkins.io/timestamper/
 
-通常情况，在遇到安装插件出错的情况下(版本冲突)，可以通过重启Jenkins来Update到指定的版本
+SSH Build Agents plugin
+https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest
+/client-and-managed-controllers/host-key-verification-for-ssh-agents
