@@ -1,0 +1,22 @@
+TODO. Linux服务器注册到Jenkins上, 将自动化任务交给Server执行
+系统管理 > 管理节点 > 新建节点 TestEnv (选择agent，定义描述语言)
+远程工作目录： /root/.jenkins
+启动方法: launch via SSH (通讯方式)
+主机: linux的IP地址 (Cloud Server使用公网的IP)
+ADD: linux的用户名和密码
+	使用root用户+密码，否则部署失败
+	login: root  password: chentongc
+保存新建的主机
+启动节点Launch Agent
+
+新建jenkins的任务，测试是否能在Linux服务器运行
+> 创建一个新任务
+> 构建一个自由风格的软件项目
+> 任务配置
+> restrict where this project can be run
+   > 设置这个任务的运行位置
+   > 指定运行的节点Agent Server
+> 构建 Execute shell
+   command > 执行一个命令，在远程的linux服务器上面来运行 !!
+保存立即构建
+查看Console Output
