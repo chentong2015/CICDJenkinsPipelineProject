@@ -1,0 +1,21 @@
+Build Triggers
+  GitHub hook trigger for GITScm polling 选择触发构建的方式
+Pipeline
+  Pipeline script
+  Pipeline script from SCM (Specify where to obtain a source code repository containing your Groovy script.)
+     Git
+        Repository URL: ..git
+        Credentials: username/***
+        Branches to build: master 选择要构建的分支
+     Script Path: pipeline脚本的相对路径
+
+
+自动化指令的流程process
+使用Maven Wrapper来构建，确保在Jenkins部署的机器上没有安装Maven工具也能执行
+   > ./mvnw compile 编译项目
+   > ./mvnw test    运行项目的测试
+   > ./mvnw package 打包项目成jar
+   > java -Dserver.port=8081 -jar target/project_demo.jar 运行在指定的端口
+
+创建pipeline项目，使用pipeline配置来上传到Nexus
+https://gcore.com/learning/publishing-artifacts-to-nexus-using-jenkins-pipelines/
