@@ -19,6 +19,11 @@ pipeline {
 
     stages {
         stage('Build') {
+            // 添加对构建分支的判断
+            when {
+                branch 'master'
+            }
+
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'

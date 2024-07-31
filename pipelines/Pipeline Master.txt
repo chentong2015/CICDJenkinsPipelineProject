@@ -1,8 +1,8 @@
+Pipeline脚本核心语法
 https://www.jenkins.io/doc/pipeline/examples/
 https://www.jenkins.io/doc/pipeline/steps/groovy/
 https://www.jenkins.io/doc/book/pipeline/syntax/
 
-Pipeline脚本语法和自动生成
 http://localhost:8080/job/Test_Pipeline/pipeline-syntax/
 
 Jenkins提供的系统变量，使用env.BRANCH_NAME来获取

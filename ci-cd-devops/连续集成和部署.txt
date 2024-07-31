@@ -6,11 +6,14 @@ Continue Integration & Continue Deployment/Delivery
 3. CI能够可能保证提交的代码不会其它项目的组的模块造成问题
 4. CI能够自动生成可部署的软件，可用于交付的代码
 
+Benefits of Continuous Integration:
+1. Higher Quality
+2. Faster Delivery
+3. Lower Costs
+4. More Flexibility
+
 Principles of Continuous Integration:
 Code Dev -> Source Control -> Build -> Test(Unit Test, UI Test, Security Test)
 
-The Benefits of Continuous Integration:
-- Higher Quality
-- Faster Delivery
-- Lower Costs
-- More Flexibility
+TODO. CI/CD Pipeline 架构设计
+https://dev.to/gauri1504/advanced-cicd-pipeline-configuration-strategies-4mjh

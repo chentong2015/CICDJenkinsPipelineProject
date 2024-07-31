@@ -37,6 +37,7 @@ projectConfig = [
   buildTargets: [
     BatchJDK17: [
       label: "java17 && build",
+      // 这里的平台名称关联发布的打包文件名称
       platform: "java",
 
       build: [
