@@ -1,18 +1,20 @@
-> java -jar jenkins.war
+jenkins本质上提供了一个新的软件构建的平台
+1. 用于测试软件在配置的环境下是否能够构建(且运行)
+2. 用于自动部署项目到release平台
+
+TODO. Jenkins启动和运行
 打开localhost:8080(端口不能被占用)
+> java -jar jenkins.war
 user: admin
 password: admin
 admin@test.com
 
-首次启动Jenkins后会在C盘生成.jenkins目录
-通过secrets\initialAdminPassword初始密码进行激活，登录后创建用户再重启
+首次启动后会在C盘生成.jenkins目录，通过secrets\initialAdminPassword激活，登录后创建用户再重启
 Windows: C:\Users\tchen\.jenkins
+         C:\Users\tchen\.jenkins\jobs 保留创建的job和build项目日志
 Linux  : $user.home/.jenkins
 
-Jenkins项目Job全部位于本地的路径并保留build项目的日志信息
-C:\Users\tchen\.jenkins\jobs
-
-Visual Studio Code + Jenkins Runner Plugin
+TODO. Visual Studio Code + Jenkins Runner Plugin
 Jenkins Runner {
     // 指定运行的Jenkins Item，选择运行方式pipeline script
     "jenkins-runner.jobs": {

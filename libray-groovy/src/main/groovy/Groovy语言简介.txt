@@ -1,0 +1,12 @@
+http://groovy-lang.org/syntax.html
+
+Groovy: 一种JVM底层语言
+Groovy是一种基于JVM的敏捷开发语言，它结合了Python, Ruby和Smalltalk的许多强大的特性
+Groovy代码能够与Java代码很好地结合(兼容Java class类型)，也能用于扩展现有代码
+
+TODO. Groovy与Pipeline: Pipeline属于Groovy的子集(subset)
+library 'library-groovy' // 引入其它groovy模块
+
+pipeline {
+    stage() {}
+}

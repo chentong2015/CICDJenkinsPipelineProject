@@ -14,6 +14,7 @@
     </properties>
 
     <dependencies>
+        <!-- 提供Groovy编程语言的依赖 -->
         <dependency>
             <groupId>org.apache.groovy</groupId>
             <artifactId>groovy-all</artifactId>
@@ -45,7 +46,7 @@
                 </dependencies>
                 <configuration>
                     <scripts>
-                        <script>src/main/groovy/Main.groovy</script>
+                        <script>src/main/groovy/GroovyScript.groovy</script>
                     </scripts>
                 </configuration>
             </plugin>
