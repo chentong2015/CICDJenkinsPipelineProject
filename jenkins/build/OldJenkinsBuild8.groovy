@@ -33,41 +33,8 @@ projectConfig = [
     gitUrl: 'ssh://git@dev-bitbucket.net:7999/Sample/DEMO.git'
   ],
 
-  // 配置项目构建的不同阶段: build > test > sonar > publish
+  // 配置项目构建的不同阶段: build > unit test > sonar > publish
   buildTargets: [
-    BatchJDK17: [
-      label: "java17 && build",
-      // 这里的平台名称关联发布的打包文件名称
-      platform: "java",
-
-      build: [
-        when: 'java17_gradle7',
-        options: bitbucketNotification,
-        gradle:[
-          cmd: '-PappVersion=${PACKAGE_VERSION} buildPackage -x test',
-          dir: 'DEMO_Batch',
-        ],
-      ],
-      unitTest :  [
-        when: 'java17_gradle7',
-        enabled: true,
-        label: "java17",
-        gradle:[
-          cmd: 'cleanTest test jacocoTestReport',
-          dir: 'DEMO_Batch',
-        ],
-        testResultsDirectory: 'DEMO_Batch/DEMO_Core/build/test-results/test',
-        jacocoReport: false,
-        jUnitPattern: '*.xml',
-      ],
-      publish: [
-        when: 'java17_gradle7',
-        propertiesFile:'DEMO_Batch/gradle.properties',
-        artifactPrefix:'DEMO_Batch/build/distributions/${appName}-${PACKAGE_VERSION}',
-        artifactSuffix: "zip"
-      ],
-    ],
-
     BatchJDK8: [
       label: "build && java8.191",
       platform: "java",
@@ -76,15 +43,19 @@ projectConfig = [
         when : 'develop|release',
         options: bitbucketNotification,
         gradle:[
+          // TODO. 执行项目构建工具的指令
           cmd: '-PappVersion=${PACKAGE_VERSION} buildPackage -x test',
           dir: 'DEMO_Batch',
         ],
       ],
+
+      // Sonar Plugin需要和JDK版本兼容
       sonar: [
         when : 'develop|release',
         projectBaseDir: "DEMO_Batch/",
         forceUseASonarInstance: "Sonar Sample",
       ],
+
       publish: [
         when : 'develop|release',
         propertiesFile:'DEMO_Batch/gradle.properties',
