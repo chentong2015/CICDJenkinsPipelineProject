@@ -1,0 +1,12 @@
+Continue Integration
+1. CI要求开发者集成(commit)代码到指定仓库，并共享集成成功的最新代码
+2. CI频繁集成(build process)能够发现代码问题，及时反馈及时修复并降低风险
+3. CI能够可能保证提交的代码不会其它项目或模块造成问题
+
+Continue Deployment/Delivery
+1. CD能够利用集成成功的代码，进行自动部署和交付
+2. CD保证集成的代码符合Business和Non-Functional要求
+3. CD能够避免手动测试带来的问题(无法复用, 手动出错，低效反馈)
+
+CI/CD Pipeline 架构设计
+https://dev.to/gauri1504/advanced-cicd-pipeline-configuration-strategies-4mjh
