@@ -1,0 +1,13 @@
+TODO. 新建jenkins的任务，测试是否能在Linux服务器运行
+Cloud Server服务器注册到Jenkins上, 将自动化任务交给Server执行
+
+> 创建一个新任务
+> 构建一个自由风格的软件项目
+> 任务配置
+> restrict where this project can be run
+   > 设置这个任务的运行位置
+   > 指定运行的节点Agent Server
+> 构建 Execute shell
+   command > 执行一个命令，在远程的linux服务器上面来运行
+保存立即构建
+查看Console Output

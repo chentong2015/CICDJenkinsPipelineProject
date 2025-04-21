@@ -1,0 +1,2 @@
+创建Jenkins项目监听Bitbucket Master分支的变更
+自动触发Jenkins Pipeline构建项目，自动打包部署

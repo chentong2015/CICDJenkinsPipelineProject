@@ -1,0 +1,21 @@
+TODO. Visual Studio Code + Jenkins Runner Plugin
+Jenkins Runner {
+     // 配置jenkins instance的信息
+    "jenkins-runner.hostConfigs": {
+	     "pipeline-7080": {
+	        "url": "http://jenkins:7080",
+		    "user": "admin"
+		    "password": "admin",
+		    "userCrumbIssuer": true
+	    }
+	},
+
+    // 指定运行的Jenkins Item，选择运行方式pipeline script
+    "jenkins-runner.jobs": {
+	   "ide" {
+	        "runWith": "pipeline-7080,
+            "name": "ide",
+            "idDefault": true
+	    }
+	 }
+}
